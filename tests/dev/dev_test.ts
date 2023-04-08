@@ -1,4 +1,4 @@
-import { assertEquals } from "https://deno.land/std@0.182.0/testing/asserts.ts";
+import { assertEquals, assert } from "../deps.ts";
 import { File } from "../../src/files/file.ts";
 
 const file = new File();
@@ -36,5 +36,13 @@ Deno.test({
       "C:/Users/NICOLAS/Desktop/markdown_library/README.md"
     );
     assertEquals(bool, true);
+  },
+});
+
+Deno.test({
+  name: "Should returu a path absolute",
+  fn() {
+    const absolute = file.conver_to_absolute("README.md");
+    assert(absolute);
   },
 });
