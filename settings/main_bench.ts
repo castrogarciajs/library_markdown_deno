@@ -1,9 +1,10 @@
-import { add } from "./main.ts";
+import { main } from "./../src/main.ts";
+
 
 Deno.bench(function addSmall() {
-  add(1, 2);
+  main(1, 2);
 });
 
 Deno.bench(function addBig() {
-  add(2 ** 32, 2 ** 32);
+  main(2 ** 32, 2 ** 32);
 });
