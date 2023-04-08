@@ -1,4 +1,4 @@
-import { assert, assertEquals } from "./deps.ts";
+import { assert, assertEquals, assertInstanceOf } from "./deps.ts";
 import { Dev } from "../src/dev.ts";
 
 const dev = new Dev();
@@ -16,5 +16,13 @@ Deno.test({
   fn() {
     const bool = dev.is_directory("README.md");
     assertEquals(bool, false);
+  },
+});
+
+Deno.test({
+  name: "should return ",
+  fn() {
+    const content = dev.read_directory("tests");
+    assertInstanceOf(content, Object);
   },
 });
