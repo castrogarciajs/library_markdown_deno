@@ -2,6 +2,6 @@
 
 [Google](https://google.com)
 
-[Jest](https://jest.io) 
+[Jest](https://jestjs.io) 
 
 [Go](https://go.dev) 
