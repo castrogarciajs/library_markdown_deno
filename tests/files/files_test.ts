@@ -1,4 +1,4 @@
-import { assertEquals, assert } from "../deps.ts";
+import { assertEquals, assert } from "../dev_deps.ts";
 import { File } from "../../src/files/file.ts";
 
 const file = new File();
