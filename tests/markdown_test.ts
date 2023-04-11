@@ -1,5 +1,5 @@
 import { Markdown } from "../src/markdown.ts";
-import { assertEquals, assert } from "./deps.ts";
+import { assertEquals, assert , assertInstanceOf} from "./dev_deps.ts";
 
 const markdown = new Markdown();
 
@@ -16,5 +16,15 @@ Deno.test({
   fn() {
     const resolve = markdown.is_file_markdown("README.md");
     assert(resolve);
+  },
+});
+
+Deno.test({
+  name: "Should return ",
+  fn() {
+    const resolve = markdown.get_file_markdown(
+      "C:/Users/NICOLAS/Desktop/markdown_library/markdown"
+    );
+    assertInstanceOf(resolve, Array)
   },
 });
