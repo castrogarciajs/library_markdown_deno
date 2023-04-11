@@ -1,4 +1,4 @@
-import { extname } from "./deps.ts";
+import { extname } from "./../deps.ts";
 import { Folder } from "./folder.ts";
 
 export class Markdown {

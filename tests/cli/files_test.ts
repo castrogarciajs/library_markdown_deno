@@ -1,5 +1,5 @@
 import { assertEquals, assert } from "../dev_deps.ts";
-import { File } from "../../src/files/file.ts";
+import { File } from "../../src/cli/file.ts";
 
 const file = new File();
 
