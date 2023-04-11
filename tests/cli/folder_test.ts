@@ -1,5 +1,5 @@
-import { assert, assertEquals, assertInstanceOf } from "./dev_deps.ts";
-import { Folder } from "../src/folder.ts";
+import { assert, assertEquals, assertInstanceOf } from "../dev_deps.ts";
+import { Folder } from "../../src/cli/folder.ts";
 
 const folder = new Folder();
 

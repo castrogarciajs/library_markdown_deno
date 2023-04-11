@@ -1,5 +1,5 @@
-import { Markdown } from "../src/markdown.ts";
-import { assertEquals, assert , assertInstanceOf} from "./dev_deps.ts";
+import { Markdown } from "../../src/cli/markdown.ts";
+import { assertEquals, assert , assertInstanceOf} from "../dev_deps.ts";
 
 const markdown = new Markdown();
 
