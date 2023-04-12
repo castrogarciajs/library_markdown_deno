@@ -49,3 +49,40 @@ Deno.test({
     });
   },
 });
+
+Deno.test({
+  name: "should return total 1",
+  fn() {
+    const paths: IPath[] = [
+      {
+        href: "https://google.com",
+        text: "google",
+        file: "README.md",
+      },
+    ];
+
+    const state = status.stats_unique(paths);
+    assertEquals(state.totalFile, 1);
+  },
+});
+
+Deno.test({
+  name: "should return unique 1",
+  fn() {
+    const paths: IPath[] = [
+      {
+        href: "https://google.com",
+        text: "google",
+        file: "README.md",
+      },
+      {
+        href: "https://google.com",
+        text: "google",
+        file: "README.md",
+      },
+    ];
+
+    const state = status.stats_unique(paths);
+    assertEquals(state.unique, 1);
+  },
+});
