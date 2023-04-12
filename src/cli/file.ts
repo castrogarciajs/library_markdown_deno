@@ -1,5 +1,5 @@
-import { isAbsolute, resolve } from "../deps.ts";
-import { existsSync } from "https://deno.land/std@0.182.0/fs/mod.ts";
+import { isAbsolute, resolve } from "$std/path/mod.ts";
+import { existsSync } from "$std/fs/mod.ts";
 
 export class File {
   exists_file(pathname: string): boolean {

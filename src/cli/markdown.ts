@@ -1,4 +1,4 @@
-import { extname } from "./../deps.ts";
+import { extname } from "$std/path/mod.ts";
 import { Folder } from "./folder.ts";
 
 export class Markdown {
