@@ -33,8 +33,8 @@
 
     <details><summary>Links</summary><p>
 
-  - [A Complete Guide to Flexbox - CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-  - [Flexbox Froggy](https://flexboxfroggy.com/#es)
+  - [A Complete Guide to Flexbox - CSS Tricks](https://html-tricks.com/snippets/sebastian/a-guide-to-flexbox/)
+  - [Flexbox Froggy](https://gridfroggy.com/#ak.sdhalk)
   - [Flexbox - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
   </p></details>
 
