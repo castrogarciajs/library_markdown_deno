@@ -2,13 +2,13 @@
 
 ## Library For Deno
 
-- El CLI llamado markdown-status es una herramienta de línea de comandos escrita en Deno que permite verificar el estado de un archivo de Markdown. El objetivo principal de este CLI es proporcionar una forma rápida y fácil de verificar si el archivo de Markdown se puede convertir a HTML y si no contiene enlaces rotos.
+- The CLI called markdown-status is a command line tool written in Deno that allows you to check the status of a markdown file. The main purpose of this CLI is to provide a quick and easy way to check if the Markdown file can be converted to HTML and does not contain broken links.
 
 ## Instalacion
 
-- Para instalar el CLI, necesitas tener Deno instalado en tu sistema. Puedes instalar Deno siguiendo las instrucciones en la documentación oficial de Deno.
+- To install the CLI, you need to have Deno installed on your system. You can install Deno by following the instructions in the official Deno documentation.
 
-Una vez que tengas Deno instalado, puedes instalar markdown-status con el siguiente comando:
+Once you have Deno installed, you can install markdown-status with the following command:
 
 ```deno
 deno install --allow-read --allow-net <proceso...>
