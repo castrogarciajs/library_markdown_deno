@@ -1,4 +1,4 @@
-import { IPath } from "../../interfaces/path.ts";
+import { IPath } from "../interfaces/path.ts";
 
 export class Status {
   async validate_link(path_name: IPath[]) {

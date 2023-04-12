@@ -1,5 +1,5 @@
 import { assertEquals } from "../dev_deps.ts";
-import { Path } from "../../src/cli/path.ts";
+import { Path } from "../../cli/path.ts";
 
 const path = new Path();
 

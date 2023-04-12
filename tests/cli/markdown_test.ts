@@ -1,4 +1,4 @@
-import { Markdown } from "../../src/cli/markdown.ts";
+import { Markdown } from "../../cli/markdown.ts";
 import { assertEquals, assert , assertInstanceOf} from "../dev_deps.ts";
 
 const markdown = new Markdown();

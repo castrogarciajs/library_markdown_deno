@@ -1,4 +1,4 @@
-import { Status } from "../../src/cli/status.ts";
+import { Status } from "../../cli/status.ts";
 import { assertEquals } from "../dev_deps.ts";
 import { IPath } from "../../interfaces/path.ts";
 
