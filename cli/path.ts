@@ -1,4 +1,4 @@
-import { IPath } from "../../interfaces/path.ts";
+import { IPath } from "../interfaces/path.ts";
 
 export class Path {
   path_read_file(path_name: string) {

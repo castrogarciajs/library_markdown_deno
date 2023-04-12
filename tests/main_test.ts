@@ -1,5 +1,5 @@
 import { assertEquals } from "./dev_deps.ts";
-import { main } from "./../src/main.ts";
+import { main } from "../main.ts";
 
 Deno.test({
   name: "Should return 5",
