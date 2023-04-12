@@ -1,10 +1,10 @@
 export class Folder {
-  is_directory(pathname: string): boolean {
-    const state = Deno.statSync(pathname);
+  is_directory(path_name: string): boolean {
+    const state = Deno.statSync(path_name);
     return state.isDirectory;
   }
-  read_directory(pathname: string) {
-    const content = Deno.readDirSync(pathname);
+  read_directory(path_name: string) {
+    const content = Deno.readDirSync(path_name);
 
     return content;
   }
