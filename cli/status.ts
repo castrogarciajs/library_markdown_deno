@@ -1,4 +1,5 @@
 import { IPath } from "../interfaces/path.ts";
+import { IStatus } from "../interfaces/status.ts";
 
 export class Status {
   async validate_link(path_name: IPath[]) {
@@ -38,6 +39,14 @@ export class Status {
     return {
       totalFile: link.length,
       unique: no_repeat.size,
+    };
+  }
+
+  broken_link(path_name: IStatus[]) {
+    const broken = path_name.filter((link) => link.OK === "fail");
+    return {
+      totalFile: path_name.length,
+      broken: broken.length,
     };
   }
 }
