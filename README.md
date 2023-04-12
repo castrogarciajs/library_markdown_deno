@@ -15,13 +15,13 @@ deno install --allow-read --allow-net <proceso...>
 ```
 
 ## Uso
-- ...
+- To use the CLI, you must have an existing markdown file. You can run the markdown-status command in the terminal, followed by the markdown file you want to check.
 
 
 ## Opciones
 
-- ...
+- The CLI accepts the following options:
 
 ## Creditos
 
-- ...
+- This CLI was created by Tu Sebastian and is distributed under the MIT license. You can contribute to and improve this project on its GitHub repository.

@@ -1,13 +1,24 @@
 {
+  "importMap": "./import_map.json",
   "tasks": {
     "dev": "deno run --watch --allow-read --allow-net ./src/main.ts",
     "test": "deno test --watch --allow-read --allow-net"
   },
-  "importMap": "./import_map.json",
   "lint": {
     "files": {
       "include": ["src/"],
       "exclude": ["src/testdata"]
+    }
+  },
+  "fmt": {
+    "files": {
+      "include": ["src", "tests"],
+      "exclude": ["markdown"]
+    }
+  },
+  "test": {
+    "files": {
+      "exclude": [".vscode", "settings"]
     }
   }
 }
