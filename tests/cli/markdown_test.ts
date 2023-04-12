@@ -1,5 +1,5 @@
 import { Markdown } from "../../cli/markdown.ts";
-import { assertEquals, assert , assertInstanceOf} from "../dev_deps.ts";
+import { assertEquals, assert, assertInstanceOf } from "../dev_deps.ts";
 
 const markdown = new Markdown();
 
@@ -25,6 +25,16 @@ Deno.test({
     const resolve = markdown.get_file_markdown(
       "C:/Users/NICOLAS/Desktop/markdown_library/markdown"
     );
-    assertInstanceOf(resolve, Array)
+    assertInstanceOf(resolve, Array);
+  },
+});
+
+Deno.test({
+  name: "should",
+  fn() {
+    const resolve = markdown.get_all_markdown(
+      "C:/Users/NICOLAS/Desktop/markdown_library/markdown"
+    );
+    assertInstanceOf(resolve, Array);
   },
 });
