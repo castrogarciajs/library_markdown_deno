@@ -17,8 +17,8 @@ export class Status {
           }
           return path_response;
         } catch (err) {
-          if(err.res) {
-            await err.res.body.cancel()
+          if (err.res) {
+            await err.res.body.cancel();
           }
           const error_response = {
             ...item,
@@ -30,5 +30,14 @@ export class Status {
       })
     );
     return responses;
+  }
+
+  stats_unique(path_name: IPath[]) {
+    const link = path_name.map((item) => item.href);
+    const no_repeat = new Set(link);
+    return {
+      totalFile: link.length,
+      unique: no_repeat.size,
+    };
   }
 }
