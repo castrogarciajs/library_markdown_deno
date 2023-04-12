@@ -1,6 +1,6 @@
 import { Markdown } from "./cli/markdown.ts";
 import { Path } from "./cli/path.ts";
-import { Status } from "./cli/status.ts";
+import { Status } from './cli/status.ts';
 
 export function markdown_deno(path_name: string, option: string[]) {
   const markdown = new Markdown();
