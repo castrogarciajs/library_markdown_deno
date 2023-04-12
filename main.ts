@@ -1,8 +1,19 @@
-export function main(a: number, b: number): number {
-  return a + b;
+import { Markdown } from "./cli/markdown.ts";
+import { Path } from "./cli/path.ts";
+
+export function markdown_deno(path_name: string, option?: string[]) {
+  const markdown = new Markdown();
+  const path = new Path();
+
+  if (!option) {
+    const array = markdown.get_all_markdown(path_name);
+    array.forEach((item) => {
+      const resolve = path.validate_path(item);
+      console.info(resolve);
+    });
+  }
 }
 
-// Learn more at https://deno.land/manual/examples/module_metadata#concepts
 if (import.meta.main) {
-  console.log("Add 2 + 3 =", main(2, 3));
+  markdown_deno("markdown/javascript/javascript.md", ["example"]);
 }

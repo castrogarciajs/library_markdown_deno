@@ -8,7 +8,7 @@ export class Path {
   }
 
   validate_path(path_name: string) {
-    const path_result: Array<IPath> = [];
+    const path_result: IPath[] = [];
     const content = this.path_read_file(path_name);
     const rule =
       /\[([\w\s\d]+)\]\(((?:\/|https?:\/\/)[\w\d./?=#]+[a-zA-Z0-9!-_$]+)\)/gi;
