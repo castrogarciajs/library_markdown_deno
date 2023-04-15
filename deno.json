@@ -2,8 +2,8 @@
   "lock": false,
   "importMap": "./import_map.json",
   "tasks": {
-    "dev": "deno run --watch -A ./main.ts",
-    "test": "deno test --watch -A",
+    "dev": "deno run --watch --allow-read --allow-net ./main.ts",
+    "test": "deno test --watch --allow-read --allow-net",
     "lint": "deno lint main.ts"
   },
   "lint": {
