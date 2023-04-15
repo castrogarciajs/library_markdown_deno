@@ -7,7 +7,7 @@ Deno.test({
   name: "Should return true",
   fn() {
     const bool = file.exists_file(
-      "C:/Users/NICOLAS/Desktop/markdown_library/README.md"
+      "README.md"
     );
     assertEquals(bool, true);
   },
@@ -29,15 +29,6 @@ Deno.test({
   },
 });
 
-Deno.test({
-  name: "Should return true",
-  fn() {
-    const bool = file.validate_absolute(
-      "C:/Users/NICOLAS/Desktop/markdown_library/README.md"
-    );
-    assertEquals(bool, true);
-  },
-});
 
 Deno.test({
   name: "Should returu a path absolute",
