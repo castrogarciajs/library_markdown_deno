@@ -25,8 +25,12 @@ export function markdown_deno(path_name: string, option: string[]) {
         .catch((err) => console.error(err));
     });
   }
-}
 
-if (import.meta.main) {
-  markdown_deno("markdown/javascript/javascript.md", []);
+  if(option[0] === '--stats') {
+    array.forEach((item) => {
+      const resolve = path.validate_path(item)    
+      const stats = status.stats_unique(resolve)      
+      console.log(stats)
+    })
+  }
 }
