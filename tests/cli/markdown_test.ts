@@ -20,20 +20,20 @@ Deno.test({
 });
 
 Deno.test({
-  name: "Should return ",
+  name: "Should return true",
   fn() {
     const resolve = markdown.get_file_markdown(
-      "C:/Users/NICOLAS/Desktop/markdown_library/markdown"
+      "markdown"
     );
     assertInstanceOf(resolve, Array);
   },
 });
 
 Deno.test({
-  name: "should",
+  name: "should return true",
   fn() {
     const resolve = markdown.get_all_markdown(
-      "C:/Users/NICOLAS/Desktop/markdown_library/markdown"
+      "markdown"
     );
     assertInstanceOf(resolve, Array);
   },
