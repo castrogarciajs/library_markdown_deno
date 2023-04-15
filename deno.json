@@ -2,18 +2,19 @@
   "lock": false,
   "importMap": "./import_map.json",
   "tasks": {
-    "dev": "deno run --watch --allow-read --allow-net ./main.ts",
-    "test": "deno test --watch --allow-read --allow-net"
+    "dev": "deno run --watch -A ./main.ts",
+    "test": "deno test --watch -A",
+    "lint": "deno lint main.ts"
   },
   "lint": {
     "files": {
-      "include": ["src/"],
+      "include": ["main.ts"],
       "exclude": ["src/testdata"]
     }
   },
   "fmt": {
     "files": {
-      "include": ["src", "tests"],
+      "include": ["main.ts", "tests"],
       "exclude": ["markdown"]
     }
   },

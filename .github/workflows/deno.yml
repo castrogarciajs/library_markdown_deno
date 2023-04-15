@@ -35,7 +35,7 @@ jobs:
       # - name: Verify formatting
       #   run: deno fmt --check
 
-      - name: Run linter
+      - name: Run main.ts
         run: deno lint
 
       - name: Run tests
