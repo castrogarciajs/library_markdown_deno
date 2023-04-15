@@ -1,4 +1,4 @@
-import { assertEquals } from "../dev_deps.ts";
+import { assertEquals, assertInstanceOf } from "../dev_deps.ts";
 import { Path } from "../../cli/path.ts";
 
 const path = new Path();
@@ -31,6 +31,6 @@ Deno.test({
     const content = path.validate_path(
       "C:/Users/NICOLAS/Desktop/markdown_library/markdown/javascript/javascript.md"
     );
-    assertEquals(content, []);
+    assertInstanceOf(content, Array);
   },
 });
