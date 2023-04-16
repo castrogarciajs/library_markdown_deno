@@ -11,7 +11,7 @@
 Once you have Deno installed, you can install markdown-status with the following command:
 
 ```deno
-deno install --allow-read --allow-net <proceso...>
+deno install --allow-read --allow-net <README.md> --validate
 ```
 
 ## Uso
